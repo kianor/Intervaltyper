@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Typer</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Message Typer</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/start" method="POST">
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <input type="text" name="message" id="message" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interval">Timer interval (seconds):</label>
+                        <input type="number" name="interval" id="interval" class="form-control" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-4">Start</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <form action="/stop" method="POST">
+                    <button type="submit" class="btn btn-danger btn-block">Stop</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <p class="text-center">Powered by (free hosting) <a href="https://discord.gg/p9Nw877jFg" target="_blank">Discord</a> | <a href="https://dash.foreverhosty.com" target="_blank">Website</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS script links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-v94RF+/gX9sUEFL+8GZbEmfjbS6bnI2kw1Bv6yWU7V4Oj1uox7VcKG6OzF0cXTN6"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-AbckVRnH5MxG5C5NV3qJ3nZNQVEVJSIgkt6QZOY6Uca8LuUkV7rm4K6SnXV7vGM8"
+            crossorigin="anonymous"></script>
+</body>
+</html>
